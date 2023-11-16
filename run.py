@@ -1,3 +1,14 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+def intro_game():
+    print('Welcome to hangman!')
+    print('If you want to see the rules, press "r"')
+    print('If you want to start the game, press "s"')
+
+    choose = input(' ')
+    if choose == "r":
+        print('the rules') 
+    elif choose == "s":
+        print(start_game())
+    else:
+        print('You have to enter "r" or "s"')
+
+intro_game()
