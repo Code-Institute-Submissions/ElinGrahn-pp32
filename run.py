@@ -29,12 +29,72 @@ def letters():
 
 
 def start_game():
-    print(' +----')
-    print(' |   |')
-    print(' |')
-    print(' |')
-    print(' |')
-    print('===')
+    if(incorrect == 0):
+        print('\n+------')
+        print('  |     |')
+        print('  |')
+        print('  |')
+        print('  |')
+        print('  |')
+        print('======')
+    elif(incorrect == 1):
+        print('\n+------')
+        print('  |     |')
+        print('  |     o')
+        print('  |')
+        print('  |')
+        print('  |')
+        print('======')
+    elif(incorrect == 2):
+        print('\n+------')
+        print('  |     |')
+        print('  |     o')
+        print('  |     |')
+        print('  |')
+        print('  |')
+        print('======')
+    elif(incorrect == 3):
+        print('\n+------')
+        print('  |     |')
+        print('  |     o')
+        print('  |    /|')
+        print('  |')
+        print('  |')
+        print('======')
+    elif(incorrect == 4):
+        print('\n+------')
+        print('  |     |')
+        print('  |     o')
+        print('  |    /|\\')
+        print('  |')
+        print('  |')
+        print('======')
+    elif(incorrect == 5):
+        print('\n+------')
+        print('  |     |')
+        print('  |     o')
+        print('  |    /|\\')
+        print('  |    /')
+        print('  |')
+        print('======')
+    elif(incorrect == 6):
+        print('\n+------')
+        print('  |     |')
+        print('  |     o')
+        print('  |    /|\\')
+        print('  |    / \\')
+        print('  |')
+        print('======')
+        print('\nWould you like to restart the game? y/n')
+
+        while True:
+            restart = input('')
+            if (restart == y):
+                print(intro_game())
+            elif (restart == n):
+                print('Okey bye!')
+            else:
+                print('You have to press y or n')
 
 
 def intro_game():
