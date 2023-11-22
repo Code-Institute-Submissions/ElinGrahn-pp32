@@ -1,34 +1,13 @@
 import random
 from words import words
 
+random_word = random.choice(words)
 
-def random_word(words):
-    word = random.choice(words)
-
-    return word
-
-
-def letters():
-    word = random_word(words)
-    get_letters = set(word)
-    used_letters = set()
-
-    while len(get_letters) > 0:
-        print('letters that have been used: ', ''.join(used_letters))   
-        word_list = [letter if letter in used_letters else '-' for letter in word] 
-        print('current word: ', ''.join(word_list))
-        user_input = input('Guess a letter: ')
-        if user_input in used_letters:
-            used_letters.add(user_input)
-            if user_input in get_letters:
-                get_letters.remove(user_input)
-        elif user_input in used_letters:
-            print('You have already used that letter. ')
-        else:
-            print('Invalid input, try again')
+for x in random_word:
+    print('_', end='')
 
 
-def start_game():
+def start_game(incorrect):
     if(incorrect == 0):
         print('\n+------')
         print('  |     |')
@@ -91,10 +70,38 @@ def start_game():
             restart = input('')
             if (restart == y):
                 print(intro_game())
+                break
             elif (restart == n):
                 print('Okey bye!')
+                break
             else:
                 print('You have to press y or n')
+                continue
+
+
+def guess_letters(guessed_letters):
+    counter = 0
+    right_guess = 0
+
+    for char in random_word:
+        if(char in guessed_letters):
+            print(random_word[counter], end=' ')
+            right_guess += 1
+        else:
+            print(' ', end=' ')
+        counter += 1
+        return right_guess
+
+def printLines():
+    print('\r')
+    for char in random_word:
+        print('\u203E', end=' ')
+    
+
+word_lenght = len(random_word)
+wrong_guesses = 0
+used_letters = []
+correct_guesses = 0
 
 
 def intro_game():
