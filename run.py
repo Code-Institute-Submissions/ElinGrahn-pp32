@@ -1,11 +1,15 @@
 import random
 from words import words
+import os
 
 random_word = random.choice(words)
 """
 for x in random_word:
     print('_', end='')
 """
+
+def clear_terminal():
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 
 def start_game(incorrect):
@@ -81,26 +85,6 @@ def start_game(incorrect):
                 continue
 
 
-"""
-def guess_letters(guessed_letters):
-    counter = 0
-    right_guess = 0
-
-    for char in random_word:
-        if (char in guessed_letters):
-            print(random_word[counter], end=' ')
-            right_guess += 1
-        else:
-            print(' ', end=' ')
-        counter += 1
-        return right_guess
-"""
-
-
-def printLines():
-    print('\r')
-
-
 def the_game():
     word_lenght = len(random_word)
     wrong_guesses = 6
@@ -115,19 +99,6 @@ def the_game():
             print('Letters used: {}'.format(used_letters))
             wrong_guesses -= 1
             print(start_game(wrong_guesses))
-            if wrong_guesses == 0:
-                print('You are out of guesses :(')
-                """
-                restart = input('Would you like to restart the game? y/n ')
-                if restart == "y":
-                    intro_game()
-                elif restart == "n":
-                    print('Okey, see you next time!')
-                else:
-                    print('You have to put y or n')
-                """
-                stop_game = True
-                break
             continue
         elif current_guess in random_word:
             used_letters.append(current_guess)
@@ -136,11 +107,23 @@ def the_game():
                 if current_guess == current_letter:
                     print('Correct!')
                     display[position] = current_guess
-                    printLines()
                     continue
         else:
             print('Invalid input')
             continue
+        if "_" not in display:
+            print('Congrats! You got the word!')
+            restart = input('Would you like to play again? Press y or n ')
+            if restart == "y":
+                clear_terminal()
+                print(intro_game())
+                break
+            elif (restart == "n"):
+                print('Okey bye!')
+                break
+            else:
+                print('You have to press y or n')
+                continue
 
 
 def intro_game():
@@ -159,6 +142,7 @@ def intro_game():
             intro_game()
             break
         elif (choose == "s"):
+            clear_terminal()
             print(the_game())
             break
         else:
