@@ -65,6 +65,7 @@ def start_game(incorrect):
         print('  |    / \\')
         print('  |')
         print('======')
+        print('\nYou lost :( the word was {}'.format(random_word))
         print('\nWould you like to restart the game? y/n')
 
         while True:
@@ -98,8 +99,6 @@ def guess_letters(guessed_letters):
 
 def printLines():
     print('\r')
-    for char in random_word:
-        print('\u203E', end=' ')
 
 
 def the_game():
@@ -109,6 +108,7 @@ def the_game():
     stop_game = False
     display = ["_" for _ in range(word_lenght)]
     while not stop_game:
+        print(display)
         current_guess = input('Guess a letter: ')
         if current_guess not in random_word:
             used_letters.append(current_guess)
