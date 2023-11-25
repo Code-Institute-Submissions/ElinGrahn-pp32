@@ -3,10 +3,7 @@ from words import words
 import os
 
 random_word = random.choice(words)
-"""
-for x in random_word:
-    print('_', end='')
-"""
+
 
 def clear_terminal():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -93,7 +90,7 @@ def the_game():
     display = ["_" for _ in range(word_lenght)]
     while not stop_game:
         print(display)
-        current_guess = input('Guess a letter: ')
+        current_guess = input('Guess a letter:\n')
         if current_guess not in random_word:
             used_letters.append(current_guess)
             print('Letters used: {}'.format(used_letters))
@@ -113,7 +110,7 @@ def the_game():
             continue
         if "_" not in display:
             print('Congrats! You got the word!')
-            restart = input('Would you like to play again? Press y or n ')
+            restart = input('Would you like to play again? Press y or n\n')
             if restart == "y":
                 clear_terminal()
                 print(intro_game())
@@ -134,7 +131,12 @@ def intro_game():
     while True:
         choose = input(' ')
         if (choose == "r"):
-            print('the rules')
+            print('In this game you will guess a word letter by letter')
+            print('Each time you guess a new letter you will be able '
+                  'to see which letters have been used and if you are correct')
+            print('For each incorrect guess the hangman will become '
+                  'more and more complete')
+            print('Once the hangman is completed you have lost the game')
             print('Start new game press"s". Exit press "e"')
             continue
         elif (choose == "e"):
