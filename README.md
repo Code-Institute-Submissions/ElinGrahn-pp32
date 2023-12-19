@@ -81,6 +81,10 @@ The project was deployed on heroku via github
 
    I had some difficulty getting the letters in place when the person guessed correctly. I looked at my classmates code for help and saw that he had used this "display = ["_" for _ in range(word_lenght)]" which solved that problem. I would however like to get rid of the qoutation marks and comma signs when it's printed in terminal but I have yet to figure that out.
 
+   At first I made a function for when the player lost the game, however it didn't show up, only the last part of the hangman would show. Therfore I moved the losing ending to be a part of the last stage of the hangman.
+
+## User Experience
+
 ## Deployment
 
 The game was deployed on heroku, the steps where as followed:
@@ -97,7 +101,7 @@ The game was deployed on heroku, the steps where as followed:
     * choose automated or manual deployment
 * Now you can view your project
 
-## Creds
+## Credits
 
 Kylie Ying [https://www.youtube.com/watch?v=cJJTnI22IF8] youtube
 
@@ -106,3 +110,5 @@ Shaun Halverson [https://www.youtube.com/watch?v=pFvSb7cb_Us] youtube
 Fellow classmate on slack[https://github.com/AbdulSyed05] for the idea
 
 Love sandwiches 
+
+Stackoverflow[https://stackoverflow.com/questions/2084508/clear-terminal-in-python]

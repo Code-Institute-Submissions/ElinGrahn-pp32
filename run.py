@@ -7,9 +7,14 @@ random_word = random.choice(words)
 
 def clear_terminal():
     os.system('cls' if os.name == 'nt' else 'clear')
-
+    # stackoverflow
+   
 
 def start_game(incorrect):
+    # Shaun Halverson
+    """
+    The different stages of the hangman until it is complete
+    """
     if (incorrect == 6):
         print('\n +------')
         print('  |     |')
@@ -70,6 +75,9 @@ def start_game(incorrect):
         print('\nWould you like to restart the game? y/n')
 
         while True:
+            """
+            The player can choose to restart the game if they want to or not
+            """
             restart = input('')
             if (restart == "y"):
                 print(intro_game())
@@ -87,6 +95,7 @@ def the_game():
     wrong_guesses = 6
     used_letters = []
     stop_game = False
+    # Abdul Seyd
     display = ["_" for _ in range(word_lenght)]
     while not stop_game:
         print(display)
