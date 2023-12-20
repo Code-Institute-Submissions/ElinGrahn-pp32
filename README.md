@@ -103,12 +103,12 @@ The game was deployed on heroku, the steps where as followed:
 
 ## Credits
 
-Kylie Ying [https://www.youtube.com/watch?v=cJJTnI22IF8] youtube
+[Kylie Ying](https://www.youtube.com/watch?v=cJJTnI22IF8) Helping me understand in general
 
-Shaun Halverson [https://www.youtube.com/watch?v=pFvSb7cb_Us] youtube
+[Shaun Halverson](https://www.youtube.com/watch?v=pFvSb7cb_Us)
 
-Fellow classmate on slack[https://github.com/AbdulSyed05] for the idea
+[Abdul Seyd](https://github.com/AbdulSyed05) Fellow classmate on slack, credits for the idea
 
 Love sandwiches 
 
-Stackoverflow[https://stackoverflow.com/questions/2084508/clear-terminal-in-python]
+[Stackoverflow](https://stackoverflow.com/questions/2084508/clear-terminal-in-python)

@@ -8,7 +8,7 @@ random_word = random.choice(words)
 def clear_terminal():
     os.system('cls' if os.name == 'nt' else 'clear')
     # stackoverflow
-   
+
 
 def start_game(incorrect):
     # Shaun Halverson
@@ -101,8 +101,9 @@ def the_game():
         print(display)
         current_guess = input('Guess a letter:\n')
         if current_guess not in random_word:
+            # Shaun Halverson
             used_letters.append(current_guess)
-            print('Letters used: {}'.format(used_letters))
+            print('Letters used: {}'.format(used_letters))  # Show used letters
             wrong_guesses -= 1
             print(start_game(wrong_guesses))
             continue
