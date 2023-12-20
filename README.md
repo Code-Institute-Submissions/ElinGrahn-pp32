@@ -87,6 +87,14 @@ The project was deployed on heroku via github
 
 ## Deployment
 
+The game was created in codeanywhere, stored in github and deployed using heroku.
+
+### Fork a project in Github
+
+ * Log into your account or create a new one
+ * Find the project you want to fork
+ * Click the fork button in the top right corner and your done
+
 The game was deployed on heroku, the steps where as followed:
 
  * Sign up for the heroku account
