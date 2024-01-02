@@ -61,6 +61,12 @@ If you won the game and want to restart
 
 In the future I would like to add different levels of diffculty so it can be more fitted for everyone. 
 
+## Flowchart
+
+The flowchart has been made in [Lucidchart](https://www.lucidchart.com/pages/sv/landing?utm_source=bing&utm_medium=cpc&utm_campaign=_chart_sv_allcountries_mixed_search_brand_exact_&km_CPC_CampaignId=369459367&km_CPC_AdGroupID=1234751733984489&km_CPC_Keyword=lucidchart&km_CPC_MatchType=e&km_CPC_ExtensionID={extensionid}&km_CPC_Network=o&km_CPC_AdPosition=&km_CPC_Creative=&km_CPC_TargetID=kwd-77172125927078:loc-174&km_CPC_Country=153578&km_CPC_Device=c&km_CPC_placement=&km_CPC_target=&mkt_query=lucidchart&msclkid=fe6f3579a30b1b9d6b5350edad8f1942)
+
+![The flowchart](screenshots/Flowchart_pp3.png)
+
 ## Technology
 
 The repository was made on github and the workspace was created in codeanywhere.
@@ -70,6 +76,10 @@ The whole page is buildt using python with exceptions of some HTML and JavaScrip
 The project was deployed on heroku via github
 
 ## Testing
+
+   ### Manual testing
+
+   The game has been tested by running it in the terminal, trying out each feature to see that something happens.
 
    ### Code validation
 
