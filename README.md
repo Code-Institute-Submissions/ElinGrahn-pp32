@@ -6,6 +6,38 @@ The purpose of this game is to try and guess the word. The player will have six 
 
 The live website: [Hangman](https://guess-correct-word-7dc0d1b2b0d6.herokuapp.com/)
 
+## Table of contents
+
+- [Hangman](#hangman)
+
+- [User Stories](#user-stories)
+
+- [Features](#features)
+
+- [Future Features](#future-features)
+
+- [FlowChart](#flowchart)
+
+- [Technology](#technology)
+
+- [Testing](#testing)
+
+    - [Manual testing](#manual-testing)
+
+    - [Code validation](#code-validation)
+
+    - [Bugs](#bugs)
+
+- [User experince](#user-experience)
+
+- [Deployment](#deployment)
+
+    - [Forking](#fork-a-project-in-github)
+
+    - [Deploy on heroku](#Deploy-on-heroku)
+    
+- [Credits](#credits)
+
 ## User stories
 
 As a visiting user I want to play a word guessing game
@@ -104,6 +136,8 @@ The game was created in codeanywhere, stored in github and deployed using heroku
  * Log into your account or create a new one
  * Find the project you want to fork
  * Click the fork button in the top right corner and your done
+
+### Deploy on heroku
 
 The game was deployed on heroku, the steps where as followed:
 
