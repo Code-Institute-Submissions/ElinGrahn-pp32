@@ -71,7 +71,7 @@ def start_game(incorrect):
         print('  |    / \\')
         print('  |')
         print('======')
-        print('\nYou lost :( the word was {}'.format(random_word))
+        print('\nYou lost :( the word was: {}'.format(random_word))
         print('\nWould you like to restart the game? y/n')
 
         while True:

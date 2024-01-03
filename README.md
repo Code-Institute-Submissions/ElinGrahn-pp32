@@ -52,23 +52,23 @@ As a visiting user I want to be able to restart the game
 
 ## Features
 
-Start
+Start page
 
 ![Start page](screenshots/pp3_start.png)
 
-Rules
+The rules
 
 ![Rules](screenshots/pp3_rules.png)
 
-Exit
+The player can exit if they want
 
 ![Exit](screenshots/pp3_if_exit.png)
 
-Start game
+Starting the actual game
 
 ![Start the game](screenshots/pp3_start_game.png)
 
-Guess a letter
+Guessing the wrong letter shows the hangman
 
 ![Guess a letter](screenshots/pp3_guess_a_letter.png)
 
@@ -77,17 +77,11 @@ The display of the letters used
 
 ![Letters used](screenshots/pp3_letters_used.png)
 
-The word showing at the end
+The word showing at the end when you lose the game and then when winning the game
 
 ![Word showing at the end](screenshots/pp3_word_shows_at_end.png)
 
-If you lost the game and want to restart
-
-![Losing the game](screenshots/pp3_lost_game.png)
-
-If you won the game and want to restart
-
-![Winning the game](screenshots/pp3_won.png)
+![Winning the game](screenshots/correct_pp3.png)
 
 ## Future features
 
