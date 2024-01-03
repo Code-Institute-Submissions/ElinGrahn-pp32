@@ -119,7 +119,7 @@ def the_game():
             print('Invalid input')
             continue
         if "_" not in display:
-            print('Congrats! You got the word!')
+            print('Congrats! You got the word! It was: {}'.format(random_word))
             restart = input('Would you like to play again? Press y or n\n')
             if restart == "y":
                 clear_terminal()

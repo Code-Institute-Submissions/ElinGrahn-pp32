@@ -127,6 +127,16 @@ The project was deployed on heroku via github
 
 ## User Experience
 
+The user will start by pressing "r" to see the rules of the game.
+
+![rules of the game](screenshots/pp3_rules.png)
+
+The user then gets the choice to either exit the game by pressing "e" or to start a new game by pressing "s". When the user starts a new game the terminal will clear and the word will show up in underscore lines and the user will be able to guess a letter.
+
+![starting the game](screenshots/pp3_start_game.png)
+
+
+
 ## Deployment
 
 The game was created in codeanywhere, stored in github and deployed using heroku.
