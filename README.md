@@ -129,7 +129,17 @@ The user then gets the choice to either exit the game by pressing "e" or to star
 
 ![starting the game](screenshots/pp3_start_game.png)
 
+The user guesses the wrong letter and the hangman will show up with one more limb than before
 
+![Wrong guess](screenshots/wrong_guess_pp3.png)
+
+Ending 1: The user guesses the word correctly before the lives end and wins the game.
+
+![winning the game](screenshots/won_pp3.png)
+
+Ending 2: The user doesn't get the word and loses.
+
+![losing the game](screenshots/pp3_lost_game.png)
 
 ## Deployment
 
